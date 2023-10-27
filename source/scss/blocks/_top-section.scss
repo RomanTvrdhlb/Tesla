@@ -1,0 +1,62 @@
+.top-section{
+    margin-bottom: clamp(50px, 8.3736vw, 104px);
+    background: linear-gradient(180deg, #1E54E9 0%, #101AA8 100%);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: clamp(12px, 2.5765vw, 32px);
+        padding: 62px 0 clamp(63px, 12.8019vw, 159px);
+        position: relative;
+    }
+
+    &__title{
+        color: rgba(var(--cl-a),1.0);
+        text-align: center;
+        font-family: var(--font-family2);
+        font-size: clamp(48px, 8.2931vw, 103px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110.523%;
+        letter-spacing: -4.12px;
+
+        @include small-tablet{
+            letter-spacing: -1.92px;
+        }
+
+        @include ios{
+            max-width: 307px;
+        }
+    }
+
+    p{
+        color: rgba(var(--cl-l),1.0);
+        text-align: center;
+        font-family: var(--font-family4);
+        font-size: clamp(14px, 1.6103vw, 20px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        max-width: 756px;
+        margin-top: -5px;
+
+        &.underline-text{
+            display: block;
+            margin-top: 0;
+            color: rgba(var(--cl-l),1.0);
+            text-align: center;
+            font-family: var(--font-family4);
+            font-size: clamp(15px, 1.9324vw, 24px);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            max-width: 100%;
+            text-underline-offset: 5px;
+        }
+
+        @include small-tablet{
+            display: none;
+        }
+    }
+}

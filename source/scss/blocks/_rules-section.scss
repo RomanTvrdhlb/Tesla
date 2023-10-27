@@ -1,0 +1,36 @@
+.rules-section{
+    padding-bottom: clamp(18px, 9.9839vw, 124px);
+
+    @include mobile{
+        padding-bottom: 18px;
+    }
+    
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(41px, 7.7295vw, 96px);
+    }
+
+    .main-top{
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='288' height='9' fill='none'%3E%3Cpath stroke='%23FF3434' stroke-linecap='round' stroke-width='1.207' d='M1.271 2.198c37.995-.206 76.072-.126 114.085-.221 38.953-.098 77.872-.32 116.815-.466 14.586-.055 29.173-.047 43.761-.047 3.472 0 13.862-.055 10.414.006-26.932.473-53.604.831-80.151 1.712-27.265.905-54.36 1.922-81.829 2.685C100.556 6.53 76.551 7 52.522 7.44'/%3E%3C/svg%3E");
+            width: 285px;
+            height: 6px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            bottom: calc((clamp(41px, 7.7295vw, 96px) / 2) * -1);
+            pointer-events: none;
+            
+            @include mobile{
+                display: none;
+            }
+        }
+    }
+}

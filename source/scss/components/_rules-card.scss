@@ -1,0 +1,109 @@
+.rules-card{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+    height: 100%;
+    padding: 20px 17px 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(var(--bg-a),1.0);
+    box-shadow: 0px 4px 19px 0px rgba(159, 175, 202, 0.15);
+
+    @include ios{
+        max-width: 265px;
+    }
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__amount{
+        color: rgba(var(--cl-i),1.0);
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        padding: 18px 0;
+        border-top: solid 1px var(--br-b);
+        border-bottom: solid 1px var(--br-b);
+
+        &:first-child{
+            border-bottom: none;
+        }
+    }
+    
+    &__value{
+        color: rgba(var(--cl-b),1.0);
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+    }
+
+    &__title{
+        color: rgba(var(--cl-b),1.0);
+        font-family: var(--font-family);
+        font-size: 27.533px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 41.3px;
+        letter-spacing: -0.688px;
+    }
+
+    &__example{
+        color: rgba(var(--cl-b),1.0);
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+
+        b{
+            color: rgba(var(--cl-b),0.52);
+        }
+    }
+
+    &__label{
+        color: rgba(var(--cl-i),1.0);
+        font-family: var(--font-family);
+        font-size: 13.767px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20.65px;
+        letter-spacing: -0.344px;
+        text-transform: uppercase;
+        padding: 3.5px 10px;
+        width: fit-content;
+        border-radius: 4.589px;
+        background: rgba(var(--bg-e),1.0);
+    }
+
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 18px;
+    }
+
+    p{ 
+        color: rgba(var(--cl-b),0.52);
+        font-family: var(--font-family);
+        font-size: 13.767px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        max-width: 182px;
+
+        i{
+            font-style: inherit;
+            color: rgba(var(--cl-b),1.0);
+        }
+    } 
+}

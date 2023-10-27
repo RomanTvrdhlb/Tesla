@@ -1,0 +1,113 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --error-bg: #d01f1f;
+  --body-bg: #FFF;
+  --body-font-size: 16px;
+  --content-width: 1242px;
+  --content-width--mode: 1207px;
+
+
+  --content-width--big: 1532px;
+  --container-offset: 20px;
+
+  @include small-tablet {
+    --container-offset: 12px;
+  }
+
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width--mode: calc(var(--content-width--mode) + (var(--container-offset) * 2));
+
+// --------------- default JS variable ---------------
+  // --header-height: 60px;
+
+
+  --default-size: 40px;
+/* width */
+
+// --------------- default scroll variable ---------------
+  --scrollbar-thumb: #1397D6;
+  // --scrollbar-thumb-hover: #00aff0;
+  --scrollbar-track:  rgba(245, 245, 245, 0.28);
+  --scrollbar-track-hover: rgba(245, 245, 245, 0.28);
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+// --------------- default slect variable ---------------
+  --select-inner-bg: #404040;
+  --select-inner-border: #FDFDFD;
+  --select-focus-border: #FDFDFD;
+
+// --------------- default font-family variable ---------------
+  --font-family: "Inter" , sans-serif; // var(--font-family);
+  --font-family2: "BebasNeue" , sans-serif; // var(--font-family2);
+  --font-family3: "Manrope" , sans-serif; // var(--font-family3);
+  --font-family4: "Roboto" , sans-serif; // var(--font-family4);
+// --------------- default text color variable ---------------
+  // --burger-color: #{HexToRGB(#00d655)};
+
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#364053)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#1E80FE)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#0058FF)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#FF3434)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#131D30)}; // rgba(var(--cl-g),1.0);
+  --cl-h: #{HexToRGB(#364053)}; // rgba(var(--cl-h),1.0);
+  --cl-i: #{HexToRGB(#0165FF)}; // rgba(var(--cl-i),1.0);
+  --cl-j: #{HexToRGB(#9FAFCE)}; // rgba(var(--cl-j),1.0);
+  --cl-k: #{HexToRGB(#0084FF)}; // rgba(var(--cl-k),1.0);
+  --cl-l: #{HexToRGB(#D5E1F7)}; // rgba(var(--cl-l),1.0);
+  --cl-m: #{HexToRGB(#131723)}; // rgba(var(--cl-m),1.0);
+  --cl-n: #{HexToRGB(#0338A5)}; // rgba(var(--cl-n),1.0);
+
+
+  --cl-o: #{HexToRGB(#FF4848)}; // rgba(var(--cl-o),1.0);
+  --cl-p: #{HexToRGB(#333333)}; // rgba(var(--cl-p),1.0);
+  --cl-q: #{HexToRGB(#2C2C2C)}; // rgba(var(--cl-q),1.0);
+
+
+// --------------- default background color variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#1E80FE)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#0165FF)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#E6F1FA)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#0155FC)}; // rgba(var(--bg-f),1.0);
+
+  --bg-g: #{HexToRGB(#0036A1)}; // rgba(var(--bg-g),1.0);
+
+
+  --bg-h: #{HexToRGB(#F8F8F8)}; // rgba(var(--bg-h),1.0);
+  --bg-i: #{HexToRGB(#F8F9FC)}; // rgba(var(--bg-i),1.0);
+  --bg-j: #{HexToRGB(#DEEBF2)}; // rgba(var(--bg-j),1.0);
+  --bg-k: #{HexToRGB(#918E8E)}; // rgba(var(--bg-k),1.0);
+  --bg-l: #{HexToRGB(#1499d8)}; // rgba(var(--bg-l),1.0);
+  --bg-m: #{HexToRGB(#ff9500)}; // rgba(var(--bg-m),1.0);
+  --bg-n: #{HexToRGB(#ff2d55)}; // rgba(var(--bg-n),1.0);
+  --bg-o: #{HexToRGB(#7000ff)}; // rgba(var(--bg-o),1.0);
+  --bg-p: #{HexToRGB(#007aff)}; // rgba(var(--bg-p),1.0);
+  --bg-q: #{HexToRGB(#918E8E)}; // rgba(var(--bg-q),1.0);
+  --bg-r: #{HexToRGB(#08A835)}; // rgba(var(--bg-r),1.0);
+  --bg-s: #{HexToRGB(#E5E5EA)}; // rgba(var(--bg-s),1.0);
+  --bg-t: #{HexToRGB(#14B641)}; // rgba(var(--bg-t),1.0);
+  --bg-u: #{HexToRGB(#F2F2F2)}; // rgba(var(--bg-u),1.0);
+
+
+
+
+
+// --------------- default border color color variable ---------------
+  --br-a: #000000; // var(--br-a);
+  --br-b: #F3F3F3; // var(--br-b);
+
+
+  --br-c: #E9E8E8; // var(--br-c);
+  --br-d: #1499D8; // var(--br-d);
+  --br-e: #C7C7CC; // var(--br-e);
+  --br-f: #0000001a; // var(--br-f);
+
+// -------------
+}

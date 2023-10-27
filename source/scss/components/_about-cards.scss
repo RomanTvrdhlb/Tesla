@@ -1,0 +1,13 @@
+.about-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: clamp(25px, 2.4155vw, 30px) clamp(25px, 3.2206vw, 40px);
+    padding: 0 38px;
+
+    &__item{
+
+        &:last-child{
+            grid-column: span 3;
+        }
+    }
+}

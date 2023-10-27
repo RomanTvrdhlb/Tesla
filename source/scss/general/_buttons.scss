@@ -1,0 +1,62 @@
+.blue-button{
+  color: rgba(var(--cl-a),1.0);
+  font-family: var(--font-family);
+  font-size: clamp(14px, 1.2882vw, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175%;
+  display: flex;
+  width: clamp(92px, 8.8567vw, 110px);
+  padding: 4px 1px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: linear-gradient(89deg, #0165FC 44.51%, #2400FF 80.67%);
+}
+
+.main-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 4px;
+  border-radius: 8.03px;
+  background: rgba(var(--bg-d),1.0);
+  padding: 13px 19px;
+  color: rgba(var(--cl-a),1.0); 
+  font-family: var(--font-family);
+  font-size: 16.061px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.65px;
+  letter-spacing: -0.402px;
+
+  svg{
+    margin-top: -2px;
+  }
+}
+
+
+.white-button{
+border-radius: 8px;
+background: rgba(var(--bg-a),1.0);
+display: flex;
+width: fit-content;
+padding: clamp(11px, 1.1272vw, 14px) clamp(12px, 1.2077vw, 15px) clamp(9px, .9662vw, 12px) clamp(11px, 1.1272vw, 14px);
+justify-content: center;
+align-items: center;
+color: rgba(var(--cl-m),1.0);
+text-align: center;
+grid-gap: 6px;
+font-family: Ivar(--font-family);
+font-size: clamp(16px, 1.6103vw, 20px);
+font-style: normal;
+font-weight: 600;
+line-height: 140%;
+text-transform: uppercase;
+transition: all .4s;
+
+&:hover{
+  box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.25);
+}
+}

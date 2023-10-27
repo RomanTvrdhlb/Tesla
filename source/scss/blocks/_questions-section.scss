@@ -1,0 +1,13 @@
+.questions-section{
+    padding-bottom: clamp(41px, 9.6618vw, 120px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 25px;
+
+        @include mobile{
+            grid-gap: 28px;
+        }
+    }
+}

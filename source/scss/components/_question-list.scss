@@ -1,0 +1,19 @@
+.questions-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: clamp(25px, 2.9791vw, 37px);
+    padding:30px clamp(24px, 3.2206vw, 40px) 24px clamp(24px, 2.4155vw, 30px);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(var(--bg-a),1.0); 
+    box-shadow: 0px 4px 19px 0px rgba(159, 175, 202, 0.15);
+
+    @include small-tablet{
+        padding-right: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+}

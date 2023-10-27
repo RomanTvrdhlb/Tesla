@@ -1,0 +1,30 @@
+.main-nav{
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(15px, 1.9324vw, 24px);
+
+
+    &__link{
+        color: rgba(var(--cl-c),1.0);
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+
+        b{
+            margin-top: -4px;
+        }
+
+        &.active{
+            color: rgba(var(--cl-d),1.0);
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+        }
+    }
+}

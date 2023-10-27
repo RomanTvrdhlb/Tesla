@@ -1,0 +1,12 @@
+header {
+  background: rgba(var(--bg-a),1.0);
+  position: relative;
+}
+
+.header {
+  padding: clamp(17px, 1.6908vw, 21px) 0 clamp(16px, 1.6103vw, 20px);
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: clamp(15px, 2.7375vw, 34px);
+}
