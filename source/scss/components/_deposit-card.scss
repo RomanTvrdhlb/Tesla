@@ -1,17 +1,18 @@
 .deposit-card{
     display: flex;
     height: 100%;
-    grid-gap: 10px;
+    grid-gap: clamp(10px, 2.4155vw, 30px);
     justify-content: space-between;
     border-radius: 16.453px;
     border: 1.097px solid var(--br-d);
     padding: clamp(10px, 1.5298vw, 19px) clamp(10px, 1.5298vw, 19px) clamp(10px, 1.7713vw, 22px) clamp(16px, 2.4155vw, 30px);
     box-shadow: 0px 4.38757px 17.55028px 0px rgba(159, 175, 202, 0.20);
-
+    position: relative;
     &__inner{
         display: flex;
         flex-direction: column;
         grid-gap: clamp(12px, 1.4493vw, 18px);
+        width: 100%;
 
         @include small-tablet{
             justify-content: space-between;
@@ -27,6 +28,14 @@
             display: grid;
             grid-template-columns: auto 1fr;
             grid-gap: clamp(1px, .161vw, 2px) 13px;
+
+            @include small-tablet{
+                grid-template-columns: 1fr;
+            }
+
+            @include mobile{
+                grid-template-columns: auto 1fr;
+            }
         }
     }
 
@@ -75,6 +84,14 @@
         line-height: 151.877%;
         letter-spacing: -0.348px;
         grid-column: span 2;
+
+        @include small-tablet{
+            grid-column: 1;
+        }
+
+        @include mobile{
+            grid-column: span 2;
+        }
     }
 
     &__name{
@@ -111,6 +128,23 @@
         height: clamp(83px, 12.4799vw, 155px);
         img{
             padding: 6px;
+        }
+    }
+
+    &--mode{
+        .deposit-card{
+
+            &__box{
+                display: flex;
+         
+                margin-right: calc(clamp(83px, 12.4799vw, 155px) + clamp(10px, 2.4155vw, 30px));
+            }
+
+            &__image{
+                position: absolute;
+                right:  clamp(10px, 1.5298vw, 19px);
+                bottom: clamp(10px, 1.7713vw, 22px);
+            }
         }
     }
 }
