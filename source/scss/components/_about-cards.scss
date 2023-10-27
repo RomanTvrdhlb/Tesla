@@ -4,10 +4,42 @@
     grid-gap: clamp(25px, 2.4155vw, 30px) clamp(25px, 3.2206vw, 40px);
     padding: 0 38px;
 
-    &__item{
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    @include small-tablet{
+        padding: 0;
+    }
+
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+
+    &__item{
+    position: relative;
         &:last-child{
             grid-column: span 3;
+
+            @include tablet{
+                grid-column: span 2;
+            }
+
+            @include mobile{
+                grid-column: initial;
+                order: 4;
+            }
+        }
+
+        &:first-child{
+            @include tablet{
+                grid-column: span 2;
+            }
+
+            @include mobile{
+                grid-column: initial;
+                order: 3;
+            }
         }
     }
 }

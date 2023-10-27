@@ -15,7 +15,7 @@
   --container-offset: 20px;
 
   @include small-tablet {
-    --container-offset: 12px;
+    --container-offset: 24px;
   }
 
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
