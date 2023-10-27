@@ -10,6 +10,8 @@ export default {
   accParrent: document.querySelectorAll('[data-accordion-init]'),
   burger: document.querySelectorAll('.burger'),
   mobileMenu: document.querySelector('.mobile-menu'),
+  links: document.querySelectorAll('.main-nav__link'),
+  header: document.querySelector('.header')
 }
 
 
