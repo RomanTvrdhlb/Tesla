@@ -38,25 +38,35 @@
 
 
 .white-button{
-border-radius: 8px;
-background: rgba(var(--bg-a),1.0);
-display: flex;
-width: fit-content;
-padding: clamp(11px, 1.1272vw, 14px) clamp(12px, 1.2077vw, 15px) clamp(9px, .9662vw, 12px) clamp(11px, 1.1272vw, 14px);
-justify-content: center;
-align-items: center;
-color: rgba(var(--cl-m),1.0);
-text-align: center;
-grid-gap: 6px;
-font-family: Ivar(--font-family);
-font-size: clamp(16px, 1.6103vw, 20px);
-font-style: normal;
-font-weight: 600;
-line-height: 140%;
-text-transform: uppercase;
-transition: all .4s;
+  border-radius: 8px;
+  background: rgba(var(--bg-a),1.0);
+  display: flex;
+  width: fit-content;
+  padding: clamp(11px, 1.1272vw, 14px) clamp(12px, 1.2077vw, 15px) clamp(9px, .9662vw, 12px) clamp(11px, 1.1272vw, 14px);
+  justify-content: center;
+  align-items: center;
+  color: rgba(var(--cl-m),1.0);
+  text-align: center;
+  grid-gap: 6px;
+  font-family: var(--font-family);
+  font-size: clamp(16px, 1.6103vw, 20px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: uppercase;
+  transition: all .4s;
 
-&:hover{
-  box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.25);
-}
+  &:hover{
+    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &--mode{
+    color: rgba(var(--cl-p),1.0);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    border-radius: 36px;
+    padding: 4px 12px;
+    text-transform: none;
+  }
 }

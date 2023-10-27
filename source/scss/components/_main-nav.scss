@@ -13,9 +13,10 @@
         line-height: 28px;
         display: flex;
         align-items: center;
-
+        grid-gap: 4px;
         b{
             margin-top: -4px;
+            margin-right: -3px;
         }
 
         &.active{
