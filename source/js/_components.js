@@ -4,7 +4,7 @@
 import './components/accordions';
 import './components/burger';
 // import './components/modals';
-// import './components/tabs';
+import './components/tabs';
 // import './components/show-pass';
 // import './components/replaceEl';
 // import './components/customMenu';
