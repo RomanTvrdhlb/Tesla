@@ -7,6 +7,14 @@
 
   <main>
     <section class="top-section">
+      <div class="top-section__image">
+        <picture>
+          <source type='image/webp' media='(max-width: 768px)' srcset='img/index/mask-mob.webp'>
+          <source media='(max-width: 768px)' srcset='img/index/mask-mob.png'>
+          <source type='image/webp' srcset='img/index/mask.webp'>
+          <img width='681' height='680' src='img/index/mask.png' alt='image'>
+        </picture>
+      </div>
       <div class="container">
         <div class="top-section__box">
           <h1 class="top-section__title">Elon Musk gives away<br> cryptocurrency recent live event</h1>
@@ -29,6 +37,15 @@
               </defs>
             </svg>
           </button>
+
+          <div class="top-section__bg">
+            <picture>
+              <source type='image/webp' srcset='img/index/bg.webp'>
+              <img width='541' height='276' src='img/index/bg.png' alt='image'>
+            </picture>
+          </div>
+
+      
         </div>
       </div>
     </section>
@@ -424,33 +441,20 @@
           </div>
 
           <div class="pay-section__inner">
-            <!-- <div class="pay-video" data-video>
-              <div class="pay-video__box" data-src="https://youtu.be/d6z4H_geX5A">
-                  <div class="pay-video__picture">
-                    <picture>
-                      <source type='image/webp' srcset='img/index/video-bg.webp'>
-                      <img width='536' height='273' src='img/index/video-bg.png' alt='image'>
-                    </picture>
-                  </div>
+            <div class="pay-video">
+              <div class="pay-video__box" data-video>
+                <div data-poster="img/index/video-bg.png" data-html="#video1" >
+                    <img src="img/index/video-bg.png" />
+                </div>
               </div>
-            </div> -->
-
-          <div class="pay-video">
-            <div class="pay-video__box" data-video>
-              <div data-poster="img/index/video-bg.png" data-html="#video1" >
-                  <img src="img/index/video-bg.png" />
+              <div style="display:none;" id="video1">
+                <video class="lg-video-object lg-html5" controls>
+                    <source src="img/video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
               </div>
             </div>
-            <div style="display:none;" id="video1">
-              <video class="lg-video-object lg-html5" controls>
-                  <source src="img/video.mp4" type="video/mp4">
-                   Your browser does not support HTML5 video.
-              </video>
-            </div>
-          </div>
 
-          
-        
             <p>Watch Elon Musk<br> teaching <b class="blue-text blue-text--mode">how to buy</b> &<br> <b class="blue-text blue-text--mode">work with cryptocurrency</b></p>
           </div>
 
