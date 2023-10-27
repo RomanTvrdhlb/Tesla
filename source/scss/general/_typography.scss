@@ -151,11 +151,7 @@
     font-weight: 500;
     line-height: 140%;
     letter-spacing: -0.329px;
-    color: rgba(var(--cl-b),1.0);
-
-    &::placeholder{
-      color: rgba(var(--cl-b),0.68);
-    }
+    color: rgba(var(--cl-b),0.68);
   }
 
   &__btn{

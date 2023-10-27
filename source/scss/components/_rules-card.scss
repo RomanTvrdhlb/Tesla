@@ -10,7 +10,8 @@
     box-shadow: 0px 4px 19px 0px rgba(159, 175, 202, 0.15);
 
     @include ios{
-        max-width: 265px;
+        width: 100%;
+        max-width: 100%;
     }
 
     &__top{

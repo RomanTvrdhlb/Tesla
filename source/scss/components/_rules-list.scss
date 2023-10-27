@@ -14,4 +14,8 @@
     @include ios{
         justify-items: center;
     }
+
+    &__item{
+        width: 100%;
+    }
 }

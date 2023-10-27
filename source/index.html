@@ -6,7 +6,7 @@
   @include('partials/header.html')
 
   <main>
-    <section class="top-section">
+    <section class="top-section" id="main">
       <div class="top-section__image">
         <picture>
           <source type='image/webp' media='(max-width: 768px)' srcset='img/index/mask-mob.webp'>
@@ -50,7 +50,7 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="container container--mode">
         <div class="about-section__box">
           <h2 class="main-title">What’s this all about & what’s happening during this event?</h2>
@@ -127,7 +127,7 @@
                 <span class="about-card__title">Already a cryptoholder? Multiply your portfolio by 2 times</span>
                 <p>Everything is pretty simple. You make a deposit, then our system counts your bonus and automaticly
                   sends it back!</p>
-                <button class="about-card__btn">🎁 Look through the bonuses --></button>
+                <a href="#rules" class="about-card__btn">🎁 Look through the bonuses --></a>
                 <div class="about-card__picture">
                   <picture>
                     <source type='image/webp' media='(max-width: 768px)' srcset='img/index/card3-mob.webp'>
@@ -149,7 +149,7 @@
       </div>
     </section>
 
-    <section class="questions-section">
+    <section class="questions-section" id="questions">
       <div class="container">
         <div class="questions-section__box">
           <div class="main-top">
@@ -219,7 +219,7 @@
       </div>
     </section>
 
-    <section class="rules-section">
+    <section class="rules-section" id="rules">
       <div class="container container--mode">
         <div class="rules-section__box">
           <div class="main-top main-top--mode">
@@ -253,7 +253,7 @@
                 <div class="rules-card__bottom">
                   <p>Always remember, <b class="blue-text">you can participate only once</b>. Make sure not to miss
                     anything or <i>fire</i> your coins.</p>
-                  <button class="main-button">
+                  <a href="#btc" class="main-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                       <g clip-path="url(#clip0_57_968)">
                         <path
@@ -270,7 +270,7 @@
                         </clipPath>
                       </defs>
                     </svg>
-                    Participate with BTC</button>
+                    Participate with BTC</a>
                 </div>
               </div>
             </li>
@@ -297,7 +297,7 @@
                 <div class="rules-card__bottom">
                   <p>Always remember, <b class="blue-text">you can participate only once</b>. Make sure not to miss
                     anything or <i>fire</i> your coins.</p>
-                  <button class="main-button">
+                  <a href="#eth" class="main-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M11.5394 23.8096C17.8855 23.8096 23.03 18.6624 23.03 12.313C23.03 5.9636 17.8855 0.816406 11.5394 0.816406C5.19334 0.816406 0.0488281 5.9636 0.0488281 12.313C0.0488281 18.6624 5.19334 23.8096 11.5394 23.8096Z"
@@ -313,7 +313,7 @@
                       <path d="M6.04297 12.542L11.3095 15.7913V10.043L6.04297 12.542Z" fill="white"
                         fill-opacity="0.602" />
                     </svg>
-                    Participate with ETH</button>
+                    Participate with ETH</a>
                 </div>
               </div>
             </li>
@@ -341,7 +341,7 @@
                 <div class="rules-card__bottom">
                   <p>Always remember, <b class="blue-text">you can participate only once</b>. Make sure not to miss
                     anything or <i>fire</i> your coins.</p>
-                  <button class="main-button">
+                  <a href="#doge" class="main-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M12.3031 23.8086C18.6492 23.8086 23.7937 18.6614 23.7937 12.312C23.7937 5.96262 18.6492 0.81543 12.3031 0.81543C5.95701 0.81543 0.8125 5.96262 0.8125 12.312C0.8125 18.6614 5.95701 23.8086 12.3031 23.8086Z"
@@ -350,7 +350,7 @@
                         d="M10.6322 11.313H13.7991V12.9556H10.6322V16.4175H12.6297C13.4203 16.4175 14.0671 16.3133 14.5707 16.1035C15.0743 15.8944 15.4692 15.6048 15.7562 15.234C16.0498 14.8485 16.2497 14.4025 16.3406 13.9299C16.4467 13.3969 16.4983 12.8548 16.4948 12.3118C16.4983 11.7687 16.4467 11.2267 16.3406 10.6936C16.2498 10.221 16.0499 9.77499 15.7562 9.38948C15.4692 9.01871 15.0735 8.72914 14.5707 8.52005C14.0671 8.31024 13.4203 8.20605 12.6297 8.20605H10.6322V11.3137V11.313ZM8.60162 12.9556H7.51367V11.3137H8.60162V6.56348H13.4093C14.2976 6.56348 15.0662 6.71437 15.7159 7.014C16.3656 7.31506 16.8956 7.72535 17.3074 8.24629C17.7185 8.76651 18.0246 9.37583 18.2251 10.0735C18.4255 10.7712 18.5253 11.5178 18.5253 12.3118C18.5303 13.0678 18.4291 13.821 18.2243 14.55C18.0246 15.247 17.7185 15.857 17.3067 16.3772C16.8956 16.8982 16.3656 17.3085 15.7159 17.6095C15.0662 17.9099 14.2968 18.06 13.4093 18.06H8.60162V12.9556Z"
                         fill="white" />
                     </svg>
-                    Participate with DOGE</button>
+                    Participate with DOGE</a>
                 </div>
               </div>
             </li>
@@ -378,7 +378,7 @@
                 <div class="rules-card__bottom">
                   <p>Always remember, <b class="blue-text">you can participate only once</b>. Make sure not to miss
                     anything or <i>fire</i> your coins.</p>
-                  <button class="main-button">
+                  <a href="#usdt" class="main-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M12.0707 23.8086C18.4167 23.8086 23.5613 18.6614 23.5613 12.312C23.5613 5.96262 18.4167 0.81543 12.0707 0.81543C5.72459 0.81543 0.580078 5.96262 0.580078 12.312C0.580078 18.6614 5.72459 23.8086 12.0707 23.8086Z"
@@ -387,7 +387,7 @@
                         d="M13.2426 13.5163V13.5148C13.1636 13.5206 12.756 13.5454 11.8467 13.5454C11.1207 13.5454 10.6097 13.5236 10.43 13.5148V13.517C7.63523 13.3927 5.54925 12.9005 5.54925 12.3117C5.54925 11.7236 7.63523 11.2314 10.43 11.1049V13.027C10.6125 13.0401 11.1358 13.0714 11.8589 13.0714C12.7265 13.0714 13.1614 13.035 13.2426 13.0278V11.1064C16.0316 11.2321 18.1126 11.7243 18.1126 12.3117C18.1126 12.9005 16.0316 13.3912 13.2426 13.5163ZM13.2426 10.9064V9.18641H17.1343V6.56348H6.53833V9.18641H10.43V10.9057C7.2672 11.0526 4.88867 11.6865 4.88867 12.4454C4.88867 13.2044 7.2672 13.8376 10.43 13.9852V19.4971H13.2426V13.9837C16.4004 13.8369 18.7731 13.2037 18.7731 12.4454C18.7731 11.6872 16.4004 11.054 13.2426 10.9064Z"
                         fill="white" />
                     </svg>
-                    Participate with USDT</button>
+                    Participate with USDT</a>
                 </div>
               </div>
             </li>
@@ -396,7 +396,7 @@
       </div>
     </section>
 
-    <section class="pay-section">
+    <section class="pay-section" id="pay">
       <div class="container">
         <div class="pay-section__box">
           <div class="pay-section__top">
@@ -444,7 +444,7 @@
             <div class="pay-video">
               <div class="pay-video__box" data-video>
                 <div data-poster="img/index/video-bg.png" data-html="#video1" >
-                    <img src="img/index/video-bg.png" />
+                    <img src="img/index/video-bg.png" alt="image">
                 </div>
               </div>
               <div style="display:none;" id="video1">
@@ -528,7 +528,7 @@
         <div class="deposit-section__box">
           <ul class="deposit-list">
             <li class="deposit-list__item">
-              <div class="deposit-card">
+              <div class="deposit-card" id="btc">
                 <div class="deposit-card__inner">
                   <div class="deposit-card__top">
                     <span class="deposit-card__title">Participate with Bitcoin</span>
@@ -541,23 +541,20 @@
                   </div>
                 
                   <form class="code">
-                    <label class="code__label">
+                    <label class="code__label" for="code-1">
                       <span class="code__name">Deposit from 0.1 BTC</span>
-                      <input type="text" class="code__content" placeholder="0xf284vvkdsf93485gjb8">
+                      <input type="text" class="code__content" id="code-1" value="0xf284vvkdsf93485gjb8">
                       <button class="code__btn">Copy address</button>
                     </label>
                   </form>
                 </div>
                 <div class="deposit-card__image">
-                  <picture>
-                    <source type='image/webp' srcset='img/index/qr.webp'>
-                    <img width='141' height='143' src='img/index/qr.png' alt='image'>
-                  </picture>
+                    <img width='141' height='143' src='https://chart.googleapis.com/chart?chs=200x200&chld=L%7C0&cht=qr&chl=text' alt='image'>
                 </div>
               </div>
             </li>
             <li class="deposit-list__item">
-              <div class="deposit-card">
+              <div class="deposit-card" id="doge">
                 <div class="deposit-card__inner">
                   <div class="deposit-card__top">
                     <span class="deposit-card__title">Participate with Dogecoin</span>
@@ -571,23 +568,20 @@
                   </div>
                 
                   <form class="code">
-                    <label class="code__label">
+                    <label class="code__label" for="code-2">
                       <span class="code__name">Deposit from 20.000 DOGE</span>
-                      <input type="text" class="code__content" placeholder="0xf284vvkdsf93485gjb8">
+                      <input type="text" class="code__content" id="code-2" value="0xf284vvkdsf93485gjb8">
                       <button class="code__btn">Copy address</button>
                     </label>
                   </form>
                 </div>
                 <div class="deposit-card__image">
-                  <picture>
-                    <source type='image/webp' srcset='img/index/qr.webp'>
-                    <img width='141' height='143' src='img/index/qr.png' alt='image'>
-                  </picture>
+                    <img width='141' height='143' src='https://chart.googleapis.com/chart?chs=200x200&chld=L%7C0&cht=qr&chl=text' alt='image'>
                 </div>
               </div>
             </li>
             <li class="deposit-list__item">
-              <div class="deposit-card">
+              <div class="deposit-card" id="eth">
                 <div class="deposit-card__inner">
                   <div class="deposit-card__top">
                     <span class="deposit-card__title">Participate with Ethereum</span>
@@ -605,23 +599,20 @@
                   </div>
                 
                   <form class="code">
-                    <label class="code__label">
+                    <label class="code__label" for="code-3">
                       <span class="code__name">Deposit from 1 ETH</span>
-                      <input type="text" class="code__content" placeholder="0xf284vvkdsf93485gjb8">
+                      <input type="text" class="code__content" id="code-3" value="0xf284vvkdsf93485gjb8">
                       <button class="code__btn">Copy address</button>
                     </label>
                   </form>
                 </div>
                 <div class="deposit-card__image">
-                  <picture>
-                    <source type='image/webp' srcset='img/index/qr.webp'>
-                    <img width='141' height='143' src='img/index/qr.png' alt='image'>
-                  </picture>
+                    <img width='141' height='143' src='https://chart.googleapis.com/chart?chs=200x200&chld=L%7C0&cht=qr&chl=text' alt='image'>
                 </div>
               </div>
             </li>
-            <li class="deposit-list__item">
-              <div class="deposit-card">
+            <li class="deposit-list__item" id="usdt">
+              <div class="deposit-card" id="usdt">
                 <div class="deposit-card__inner" data-tabs-parrent>
                   <div class="deposit-card__top deposit-card__top--mode">
                     <span class="deposit-card__title">Participate with Tether</span>
@@ -648,27 +639,27 @@
                   <ul class="deposit-card__content">
                     <li class="deposit-card__wrapp active" data-tab-content="1">
                       <form class="code">
-                        <label class="code__label">
+                        <label class="code__label" for="code-4">
                           <span class="code__name">Deposit from 2.000 TRC-20</span>
-                          <input type="text" class="code__content" placeholder="0xf284vvkdsf93485gjb8">
+                          <input type="text" class="code__content" id="code-4" value="0xf284vvkdsf93485gjb8">
                           <button class="code__btn">Copy address</button>
                         </label>
                       </form>
                     </li>
                     <li class="deposit-card__wrapp" data-tab-content="2">
                       <form class="code">
-                        <label class="code__label">
+                        <label class="code__label" for="code-5">
                           <span class="code__name">Deposit from 2.000 ERC-20</span>
-                          <input type="text" class="code__content" placeholder="0xf284vvkdsf93485gjb9">
+                          <input type="text" class="code__content" id="code-5" value="0xf284vvkdsf93485gjb9">
                           <button class="code__btn">Copy address</button>
                         </label>
                       </form>
                     </li>
                     <li class="deposit-card__wrapp" data-tab-content="3">
                       <form class="code">
-                        <label class="code__label">
+                        <label class="code__label" for="code-6">
                           <span class="code__name">Deposit from 2.000 BEP-20</span>
-                          <input type="text" class="code__content" placeholder="0xf284vvkdsf93485gjb5">
+                          <input type="text" class="code__content" id="code-6" value="0xf284vvkdsf93485gjb5">
                           <button class="code__btn">Copy address</button>
                         </label>
                       </form>
@@ -677,10 +668,7 @@
                   
                 </div>
                 <div class="deposit-card__image">
-                  <picture>
-                    <source type='image/webp' srcset='img/index/qr.webp'>
-                    <img width='141' height='143' src='img/index/qr.png' alt='image'>
-                  </picture>
+                    <img width='141' height='143' src='https://chart.googleapis.com/chart?chs=200x200&chld=L%7C0&cht=qr&chl=text' alt='image'>
                 </div>
               </div>
             </li>
@@ -693,7 +681,8 @@
 
   @include('partials/footer.html')
   @include('partials/modals.html')
+
+  <script src="js/main.js"></script>
 </body>
-<script src="js/main.js"></script>
 
 </html>
