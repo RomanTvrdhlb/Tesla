@@ -8,5 +8,65 @@ header {
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr auto;
-  grid-gap: clamp(15px, 2.7375vw, 34px);
+  grid-gap: clamp(15px, 1.2375vw, 34px);
+
+  @include laptop{
+    grid-gap: 15px;
+  }
+  
+  .main-nav{
+    justify-content: center;
+
+    @include laptop{
+      grid-gap: 10px;
+      overflow: hidden;
+      overflow-x: auto;
+      white-space: nowrap;
+      justify-content: space-between;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
+    &__link{
+      white-space: nowrap;
+      @include laptop{
+        font-size: 14px;
+        grid-gap: 10px;
+      }
+    }
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  @include tablet{
+    .blue-button{
+      justify-self: end;
+    }
+  }
+}
+
+.logo{
+  svg{
+    width: Min(11.2721vw, 140px);
+    height: auto;
+  }
+
+  @include tablet{
+    display: none;
+  }
+
+  &--mob{
+    svg{
+      width: 146px;
+      height: auto;
+    }
+    display: none;
+    @include tablet{
+      display: flex;
+      align-items: center;
+    }
+  }
 }

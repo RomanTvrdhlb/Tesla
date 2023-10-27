@@ -14,18 +14,38 @@
         display: flex;
         align-items: center;
         grid-gap: 4px;
+        transition: all .4s;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: '';
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: rgba(var(--bg-c),1.0);
+            transition: all .4s ease-in;
+            bottom: 0;
+            border-radius: 5px;
+        }
+
         b{
             margin-top: -4px;
             margin-right: -3px;
         }
 
-        &.active{
+        &:hover{
             color: rgba(var(--cl-d),1.0);
-            font-family: var(--font-family);
-            font-size: 16px;
-            font-style: normal;
+
+            &::before{
+                width: 100%;
+                right: auto;
+                left: 0;
+            }
+        }
+        &.active{
+            color: rgba(var(--cl-d),1.0); 
             font-weight: 600;
-            line-height: 28px;
         }
     }
 }
