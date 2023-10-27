@@ -169,6 +169,13 @@
     font-weight: 500;
     line-height: 140%;
     padding: 5px 8px;
+    transition: all .4s;
+    border: solid 1px transparent;
+    &:hover{
+      border-color:var(--br-f);
+        background-color: rgba(var(--bg-a),1.0);
+        color: rgba(var(--cl-b),1.0);
+    }
   }
 }
 

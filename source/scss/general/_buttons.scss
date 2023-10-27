@@ -13,6 +13,12 @@
   gap: 10px;
   border-radius: 5px;
   background: linear-gradient(89deg, #0165FC 44.51%, #2400FF 80.67%);
+  transition: all .2s;
+
+  &:hover{
+  transform: scale(1.01);
+   
+  }
 }
 
 .main-button{
@@ -30,9 +36,16 @@
   font-weight: 500;
   line-height: 20.65px;
   letter-spacing: -0.402px;
-
+  border: solid 1px transparent;
   svg{
     margin-top: -2px;
+  }
+  transition: all .4s;
+
+  &:hover{
+    border-color:var(--br-f);
+      background-color: rgba(var(--bg-a),1.0);
+      color: rgba(var(--cl-b),1.0);
   }
 }
 
@@ -56,8 +69,18 @@
   text-transform: uppercase;
   transition: all .4s;
 
+  svg{
+    transition: all .4s;
+    stroke: rgba(var(--cl-m),1.0);
+  }
+  
   &:hover{
-    box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.25);
+      background-color: rgba(var(--bg-f),1.0);
+      color: rgba(var(--cl-a),1.0);
+
+      svg{
+        stroke: rgba(var(--cl-a),1.0);
+      }
   }
 
   &--mode{
@@ -69,4 +92,6 @@
     padding: 4px 12px;
     text-transform: none;
   }
+
+ 
 }

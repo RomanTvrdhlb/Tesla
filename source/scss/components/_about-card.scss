@@ -238,7 +238,12 @@
         gap: 8.075px;
         border-radius: 62.988px;
         background: rgba(var(--bg-a),1.0);
+        transition: all .4s;
 
+        &:hover{
+            background-color: rgba(var(--bg-d),1.0);
+            color: rgba(var(--cl-a),1.0);
+        }
         @include mobile{
             margin-top: 14px;
         }
@@ -293,5 +298,10 @@
         font-weight: 500;
         line-height: 125%;
         text-decoration-line: underline;
+        transition: all .4s;
+
+        &:hover{
+            color: rgba(var(--cl-n),1.0);
+        }
     }
 }
